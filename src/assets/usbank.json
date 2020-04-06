@@ -1,0 +1,34 @@
+{
+
+"customerDetails":
+
+[
+
+{ "name":"Michael Christopherson",
+
+"prCustDetails":[{"primaryId":"1050", "primaryIdType":"US Military Id","issueState":"Texas", "issueCountry":"USA","issueDate":"02/30/2006", "expDate":"12/29/2016", "managementOverride": "Yes"}, {"secondaryId":"US5896327300010050", "secondaryIdType":"US Passport","scIssueState":"Kentucky", "scIssueCountry":"USA","scIssueDate":"11/30/2009", "scExpDate":"12/29/2019"}],
+
+"addCustDetails":[{ "Customer2":
+
+[{"primaryId":"106950", "primaryIdType":"US Driving License","issueState":"Ohio", "issueCountry":"USA","issueDate":"02/30/2015", "expDate":"11/11/2026" }, {"secondaryId":"196900250", "secondaryIdType":"State Id","scIssueState":"Alabama", "scIssueCountry":"USA","scIssueDate":"10/30/2008", "scExpDate":"12/29/2018"}]
+
+},
+
+{ "Customer3":
+
+[{"primaryId":"91059990", "primaryIdType":"Student Id","issueState":"Oregon", "issueCountry":"USA","issueDate":"10/30/2008", "expDate":"12/29/2013" }, {"secondaryId":"1002350", "secondaryIdType":"Guatemalan Consulate Id","scIssueState":"Mexico City", "scIssueCountry":"Mexico","scIssueDate":"01/30/2011", "scExpDate":"12/29/2020"}]
+
+},
+
+{ "Customer4":
+
+[{"primaryId":"CA91121050", "primaryIdType":"Canadian Driving License","issueState":"Toronto", "issueCountry":"Canada","issueDate":"02/30/2006", "expDate":"12/29/2026" }, {"secondaryId":"10050", "secondaryIdType":"Mexican Consulate Id","scIssueState":"Mexico City", "scIssueCountry":"Mexico","scIssueDate":"11/30/2017", "scExpDate":"12/29/2029"}]
+
+}]
+
+}
+
+]
+
+}
+

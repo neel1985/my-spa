@@ -1,0 +1,165 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container-fluid" style="background-color: #f2f2f2;">
+	<div class="row">
+		<div class="col-sm-3">
+			<div id="side_panel">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="sidePanelContent">
+						<a href="#home" class="dataColor"><img src="../assets/home.png" class="icon" />&nbsp; Home</a>
+					</li>
+					<li class="sidePanelContent">
+						<a data-toggle="tab" class="active tabsState" href="#arrival"><img src="../assets/new/arrival.png" class="icon" />&nbsp; Arrivals
+							<img src="../assets/add.png" class="collapseData" data-toggle="collapse" data-target="#demo" />
+							<div id="demo" class="collapse">
+								<li class="listBlock">
+									<a routerLink="/ChooseTerminal" class="subContent">ChooseTerminal</a>
+								</li>
+								<li class="listBlock">
+									<a routerLink="/YourBooking" class="subContent">YourBooking</a>
+								</li>
+							</div>
+						</a>
+					</li>
+					<li class="sidePanelContent">
+						<a data-toggle="tab" class="tabsState" href="#arrival"><img src="../assets/new/departure.png" class="icon" />&nbsp; Departure
+							<img src="../assets/add.png" class="collapseData" data-toggle="collapse" data-target="#demo1">
+							<div id="demo1" class="collapse">
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+							</div>
+						</a>
+					</li>
+					<li class="sidePanelContent">
+						<a data-toggle="tab" class="tabsState" href="#transport"><img src="../assets/new/transport.png" class="icon" />&nbsp; Transport
+							<img src="../assets/add.png" class="collapseData" data-toggle="collapse" data-target="#demo2">
+							<div id="demo2" class="collapse">
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+							</div>
+						</a>
+					</li>
+					<li class="sidePanelContent">
+						<a class="tabsState" href="#" class="dataColor"><img src="../assets/new/restaurant.png" class="icon" />&nbsp; Restaurant
+							<img src="../assets/add.png" class="collapseData" data-toggle="collapse" data-target="#demo3">
+							<div id="demo3" class="collapse">
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+								<li class="listBlock"><a href="#" class="subContent">Content1</a></li>
+							</div>
+						</a>
+					</li>
+				</ul>	
+			</div>		
+		</div>
+		<div class="col-sm-9">
+		    <div id="content">
+				<div class="row">
+					<div class="col-sm-8">
+						<div id="text1">Manchester  - your journey starts here </div>
+						<div id="text2">Welcome to offical airport website.</div>
+						<ul class="nav nav-tabs">
+							<li class="active tabsState" (click)="myClick()" >
+								<a data-toggle="tab" href="#arrival" ><img src="../assets/arrival.png" class="icon" />
+									<!--<img src="../assets/arrival.png" class="icon" ng-show="arrivalInactive" />-->
+									&nbsp;&nbsp;Arrival
+								</a>
+							</li>
+							<li class="tabsState"><!-- (click)="myClick1()"-->
+								<a data-toggle="tab" href="#arrival" ><img src="../assets/departure.png" class="icon" />
+									<!--  <img src="../assets/departure.png" class="icon" ng-show ="departureActive" >-->
+									&nbsp;&nbsp;Departure
+								</a>
+							</li>
+							<li class="tabsState" ><!-- (click)="myClick2()" -->
+								<a data-toggle="tab" href="#transport"><img src="../assets/transport.png" class="icon" />
+								<!--	<img src="../assetstransport.png" class="icon" ng-show ="transportActive"/> -->
+									&nbsp;&nbsp;Transport
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<span *ngFor='let weather of curWeather'>
+							<img src="../assets/weather.png" class="weather"><span><b style="margin-left: 5%;font-size: 15.5px;">{{weather.c}}</b></span><span style="margin-left: 4%;">{{weather.f}}</span>
+							<p class="dateDisplay"> {{weather.location}}, {{ today | date:'hh:mm' }}, {{ today | date:'EEE' }}, {{ today | date:'dd MMMM yyyy' }} </p>
+						</span>
+					</div>
+					
+				</div>
+				<p></p>
+				<!-- <form id="filter"> -->
+				<div class="search">
+					<input type="text" class="searchBox" placeholder="Flight no, Origin" [(ngModel)]="term" style="background-image: url('../assets/searchicon.png');background-repeat: no-repeat;background-size: 1.5em; background-float: l; background-position-x: right; background-position-y: center;"/>					
+		
+				</div>
+				<p></p>
+				<div class="row tab-content " >	
+					<div id ="arrival" class="col-md-12 tab-pane fade in active " >			
+						<div class="col-md-3 " *ngFor='let airline of myAirline | filter:term'>
+							<div class="parkingData" >
+								<div style="height:20%;width:100%; background-color: #00ccff; color: #fff; font-size: 2em; margin-bottom: 1px solid white">
+									{{ airline.Airline}}
+									<hr>
+								</div>
+								<div style="height:80%;width:100%; background-color: #00ccff; color: #fff; font-size: 1em;">
+									<div style="color: #fff; font-size: 1em;float: left;padding-top:1%;padding-bottom: 1%;width: 100%;">Flight No: {{ airline.FlightNo}} </div><hr class="style14">
+									<div style="color: #fff; font-size: 1em;float: right;padding-top:1%;padding-bottom: 1%;width: 100%;">Departure: {{ airline.DeptTime}} <hr class="style14"></div><hr>
+									<div style="color: #fff; font-size: 1em;float: left;padding-top:1%;padding-bottom: 1%;width: 100%;">{{ airline.StartPoint}} </div>
+									<img src='assets/images/{{airline.icon}}.png' width="100px;" height="100px;" style="    margin-left: 0% !important;"/><hr class="style14">
+									<div style="color: #fff; font-size: 1em;float: right;padding-top:1%;padding-bottom: 1%;width: 100%;">Arrival: {{ airline.ArrivalTime}} </div><hr class="style14">
+									<div style="color: #fff; font-size: 1em;float: left;padding-top:1%;padding-bottom: 1%;width: 100%;">{{ airline.EndPoint}} </div>
+									<br><br><br><br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="transport" class="col-md-12 tab-pane fade">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-3" *ngFor='let product of iproducts'>
+									<div class="fillContent">
+									<br>
+										<div class="row">
+											<div class="col-sm-2">
+												<p class="Text1">P</p>
+											</div>
+											<div class="col-sm-8">
+												<p class="Long">{{product.type}}</p>
+											</div>
+										</div>
+										<br>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="timeDesign">
+													<p class="timings"><span style="float: left; padding-left:2%;">{{product.totalTime}}</span>
+														<br><span style="float: left; padding-left:2%;">{{product.interval}}</span>
+														<img *ngIf="product.interval==''" src="assets/images/{{product.icon}}.png" style="float:right;padding-right:2%;" width="30px" height="30px" class="travel" style="margin-top:-8%;" alt="{{product.imgType}}">
+														<img *ngIf="product.interval!=''" src="assets/images/{{product.icon}}.png" style="float:right;padding-right:2%;" width="30px" height="30px" class="travel" style="margin-top:-27%;" alt="{{product.imgType}}">
+													</p>
+												</div>
+											</div>
+										</div>
+										<br>
+										<div class="row">
+											<div class="col-sm-10">
+												<div class="price"><br>
+													<p id="price1">{{product.originalPrice}}</p>
+													<p id="priceText">Your price</p>
+													<p id="price2">{{product.discountedPrice}}</p>
+												</div>
+											</div>
+										</div>
+										<br>
+											<button class="btn btn-success" (click)= 'toNext(product)'>Book Now</button> <!-- ChangeBtn -->
+									</div>
+								</div>
+							</div>
+						</div>
+						{{ commonArray[3] }}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>			
+</div>

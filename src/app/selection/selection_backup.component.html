@@ -1,0 +1,213 @@
+<!-- <p>{{ticketdetails}}</p> -->
+
+<div class="body" style="background-color:#F2F2F2;height: 140vh;" >
+		<!--<nav class="navbar navbar-default" style="background-image:url('../assets/images/logo1.png');">
+			<ul id="header_nav">
+				<li id="home" class="headerNavLink"><a [routerLink]="Home">Home</a></li>
+				<li id="mobileSite" class="headerNavLink"><a href="#">Mobile Site</a></li>
+				<li id="manageBooking" class="headerNavLink"><a href="#">Manage my booking</a></li>
+				<li id="contactUs" class="headerNavLink"><a href="#">Contact us</a></li>
+				<li id="help" class="headerNavLink"><a href="#">Help & FAQ</a></li>
+				<li id="cookies" class="headerNavLink"><a href="#">Cookies</a></li>
+				<li id="login" class="headerNavLink"><a href="#">Login/Register</a></li>
+			</ul>
+		</nav>-->
+		<div class="container container-fluid" style="width: 80%;height: 400px;margin-left:10%;  float: left;"> 
+			<div  class="leftPart">
+				<div  class="leftPartHeader" id="leftPartHeader"><p>Save up to 70% on Airport Parking</p></div>
+				<div  class="ticketElementHolder" id="ticketElementHolder">
+					<div *ngFor='let x of ticketdetails' >
+						<div class="ticketElement a" *ngIf="x.type=='tab1'" (click)="inTab1()" style="float: left; margin-left:1%; background-color: #032F5E">
+							<div style="margin-left: 2%;float: left;width:100%;">
+								<img src="../assets/images/{{ x.icon}}.png" style="width: 60px height: 25px;"> 
+							</div>
+							<div class="ticketContent" id="ticketContent" style="padding-top:0px;">
+								<p style="font-size:15px; margin:0px;">{{x.terminal}}</p>
+								<p style="font-size:25px">{{ x.header1}}
+									<b>{{ x.header2}}</b>
+								</p>
+							</div>
+							<hr  style="margin:0;">
+							<div class="ticketFooter" id="ticketContent">
+								<p>{{ x.footer}}</p>
+							</div>
+						</div>
+						<div class="ticketElement"  *ngIf="x.type=='tab2'"  style="margin-left:1%;background-color: #E9188F">
+							<div style="margin-left: 7%;float: left;">
+								<img src="../assets/images/{{ x.icon}}.png" style="width: 60px height: 25px;">
+							</div>
+							<div class="ticketContent" id="ticketContent">
+								<p style="font-size:28px; float: left;    margin-top: 10%;margin-bottom: 13.3%;">{{ x.header1}}
+									<b>{{ x.header2}}</b>
+								</p>
+							</div>		
+						</div>
+						<div class="ticketElement" *ngIf="x.type=='tab3'"  style="float: left; margin-left:1%; background-color: #344088">
+							<div class="ticketContent">
+							<img src="../assets/images/{{ x.icon}}.png" style="margin-left: 12%;margin-top: 8%;">
+								<p style="font-size:17px; margin-top: 5%; margin-left: 15%;">{{ x.header1}}
+									<b>{{ x.header2}}</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div  id="leftPartFooter" class="leftPartFooter">
+					<p id="footerContent" class="footerContent">
+					If you're looking to save money on Manchester Airport parking then look no further. </p>
+					<p class="footerContent">Prebook with us and save up to 70%.
+					</p >
+				</div>
+			</div>
+			<div class="schedulerHolder">
+				<div class="scheduleBlock">
+					<div class="scheduleHeader">Quick Quote</div>
+					<div class="scheduleContent">
+						<div style="float: left;    width: 100%;">
+							<select id="terminalSelect" class="custom-select" style="background-image: url(assets/images/down-arrow.png);">
+								<option value="0">Select your terminal</option>
+								<option value="1">Terminal One</option>
+								<option value="2">Terminal Two</option>
+								<option value="3">Terminal Three</option>
+							</select>
+						</div>
+						<div style="float: left;margin-top:8%;">
+							<input type="date" id="fromDate" class="fromDate" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;">
+							<input id="time1" type="time" class="time_1" style=" background: url(assets/images/clock.png) no-repeat;background-position: right; background-size: 16px;"/> 
+							<!-- <input id="time2" type="time" class="time_2" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;"/>		-->					
+						</div>
+						<div style="float: left;margin-top:8%;">
+							<input type="date" id="toDate" class="fromDate" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;">
+							<input id="time2" type="time" class="time" style=" background: url(assets/images/clock.png) no-repeat;background-position: right; background-size: 16px;"/>
+						</div>
+					</div>
+					
+					<button class="btn btn-success" style="margin-left: 63%;margin-top: 5%;" (click)="getQuoteHandler()">Get Quote</button>
+				</div>
+				<div  id="adBlock" class="adBlock">
+					<img src="../assets/images/adImg.png" id="adImg" class="adImg">
+					<p id="adBlockContent" class="adBlockContent">If you find the exactly the same product cheaper within 24 hours of paying, we will match the price!</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="container container-fluid" style="width: 80%;height: 400px;background-color: #eaebed;margin-left:10%;margin-bottom:2%;margin-top: 1%;  float: left;"> 
+			<ul class="nav nav-tabs" style="background-color: white">
+				<li  class="ParkingTab active" style="" >
+					<a  data-toggle="tab" href="#1" style="font-weight: bold">Short Stay Parking</a>
+				</li>
+				<li class="ParkingTab">
+					<a data-toggle="tab" href="#2" style="font-weight: bold">Valet Parking</a>
+				</li>
+				<li class="ParkingTab">
+					<a data-toggle="tab" href="#3" style="font-weight: bold">Meet & Greet Parking</a>
+				</li>
+				<li class="ParkingTab" style="">
+					<a data-toggle="tab" href="#4" style="font-weight: bold">Pod Parking</a>
+				</li>
+				<li  class="ParkingTab" style="">
+					<a data-toggle="tab" href="#5" style="font-weight: bold">Business Parking</a>
+				</li>
+				<li class="ParkingTab" style="">
+					<a data-toggle="tab" href="#6" style="font-weight: bold">Long Stay Parking</a>
+				</li>
+			 </ul>
+			 <div style="width: 100%; height: 3px;background-color: #73C167;"></div>
+				<div class="tab-content" style="height:89%; display:block;overflow:hidden;">
+				
+					<div *ngFor="let x of tabdetails" id={{x.id}} class="tab-pane fade in active" style="height:100%; background-color:white; margin-top:0%;">
+						<div id="parkingImgHolder" class="parkingImgHolder">
+						
+							<img id="shortStayImg" class="parkingImg" src="../assets/{{x.icon}}.png">
+						</div>
+						<div id="parkingContentHolder" class="parkingContentHolder">
+							<p class="cardHeader">{{x.header}}</p>
+							<ul>
+								<li style="padding:10px;">{{x.line1}}</li>
+								<li style="padding:10px;">{{x.line2}}</li>
+								<li style="padding:10px;">{{x.line3}}</li>
+								<li style="padding:10px;">{{x.line4}}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <button (click) = "getUpdate()">Click</button> -->
+		<!-- <app-products></app-products> -->
+		
+		<bs-modal #myModal>
+			<bs-modal-header [showDismiss]="true">
+				<h3 class="modal-title" style="text-align: center;color:#7A99AC;">Book a Parking</h3>
+			</bs-modal-header>
+			<bs-modal-body>
+				<div class="scheduleContent">
+					<div style="float: left;    width: 100%;">
+						<label style="padding-right: 5%;">Terminal</label>
+						<select id="terminalSelect" class="custom-select" style="background-image: url(assets/images/down-arrow.png);">
+							<option value="">Select your terminal</option>
+							<option value="1">Terminal One</option>
+							<option value="2">Terminal Two</option>
+							<option value="3">Terminal Three</option>
+							<option value="13">Terminal One & Three</option>
+						</select>
+					</div>
+					
+					<div style="float: left;    width: 100%;">
+						<label >Paking Type</label>
+						<select id="terminalSelect" class="custom-select" style="background-image: url(assets/images/down-arrow.png);">
+							<option value="">Select paking Type</option>
+							<option value="ss">Short Stay Parking</option>
+							<option value="ls">Long Stay Parking</option>
+							<option value="v">Valet Paking</option>
+							<option value="p">Pod Paking</option>
+							<option value="b">Business Paking</option>
+							<option value="mg">Meet&Greet Paking</option>
+						</select>
+					</div>
+					
+					<div style="float: left;    width: 100%;">
+						<label >Terminal</label>
+						<select id="terminalSelect" class="custom-select" style="background-image: url(assets/images/down-arrow.png);">
+							<option value="0">Select your terminal</option>
+							<option value="1">Terminal One</option>
+							<option value="2">Terminal Two</option>
+							<option value="3">Terminal Three</option>
+
+
+
+						</select>
+					</div>
+					
+					<div style="float: left;margin-top:8%;">
+
+
+						<input type="date" id="fromDate" class="fromDate" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;">
+
+
+
+						<input id="time1" type="time" class="time_1" style=" background: url(assets/images/clock.png) no-repeat;background-position: right; background-size: 16px;"/> 
+
+						<!-- <input id="time2" type="time" class="time_2" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;"/>		-->					
+					</div>
+					<div style="float: left;margin-top:8%;">
+
+
+						<input type="date" id="toDate" class="fromDate" style="background: url(assets/images/calendar.png) no-repeat;background-position: right; background-size: 16px;width:100%; margin-left:10%;border-left:none; border-right:none; border-top:none; border-bottom:1px solid grey;float: left;">
+
+
+
+						<input id="time2" type="time" class="time" style=" background: url(assets/images/clock.png) no-repeat;background-position: right; background-size: 16px;"/>
+
+
+					</div>
+				</div>
+			</bs-modal-body>
+			<bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
+
+
+
+
+
+		</bs-modal>

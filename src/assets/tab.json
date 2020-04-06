@@ -1,0 +1,45 @@
+﻿[
+  { "id":1,"icon":"short",
+    "header":"Short Stay Parking",
+    "line1":"Ideal when you plan to stay for short while",
+    "line2":"Well maintained parking lanes for quick last minute drops",
+    "line3":" Close to the terminal",
+    "line4":"Under 24-hour security."
+  },{"id":2,
+	"icon":"valet",
+    "header":"Valet Parking",
+    "line1":"Most luxurious parking exprience.",
+    "line2":"There is no hastle of parking the car on your own.",
+    "line3":"Simply head to the terminal entrance with you car.",
+    "line4":"Hand over the keys to hour chauffeur and walk out tension free."
+  },{"id":3,
+	"icon":"meet",
+    "header":"Meet & Greet Parking",
+    "line1":"What can be more comfortable than heading to airport in your own car",
+    "line2":"Hand over your car to us while you are away.",
+    "line3":"The safety of your car is our responsibilty.",
+    "line4":"Collect the car from us on your return."
+  },  {"id":4,
+	"icon":"pod",
+    "header":"Pod Parking",
+    "line1":" A fully autonomous system of self-driving pods.",
+    "line2":" Choose a parking space and walk to the “pod” station.",
+    "line3":" Tap your destination terminal on a touch screen.",
+    "line4":"You can share it with up to 4 persons."
+  },{"id":5,
+	"icon":"business",
+    "header":"Business Parking",
+    "line1":"Ideal for business purpose",
+    "line2":"The goods vehicle can be parked close to the terminal for easy transfer of goods.",
+    "line3":"Carriages are provided by us.",
+    "line4":"The well being of your goods is our responsibilty."
+  },{"id":6,
+	"icon":"long",
+    "header":"Long Stay - parking without the long haul.",
+    "line1":"Ideal when you're away for longer.",
+    "line2":"The only long Stay Car Park within the airport perimeter.",
+    "line3":"Shuttles every 10 minutes and take an average of 10 minutes to your terminal.",
+    "line4":"You're parked in a car park in a 24hr security."
+  }
+  ]
+  

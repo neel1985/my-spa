@@ -1,0 +1,38 @@
+[
+	{
+		"type": "Long Stay Parking",
+		"totalTime": "7-10 mins",
+		"imgType": "Bus",
+		"icon": "bus2",
+		"interval": "Every 10 mins",
+		"originalPrice": "$50",
+		"discountedPrice": "$30"
+	},
+	{
+		"type": "Business Parking",
+		"totalTime": "5-7 mins",
+		"imgType": "SUV",
+		"icon": "suv1",
+		"interval": "Every 7 mins",
+		"originalPrice": "$30",
+		"discountedPrice": "$25"
+	},
+	{
+		"type": "Valet Parking",
+		"totalTime": "1-2 mins",
+		"imgType": "Car",
+		"icon": "car",
+		"interval": "",
+		"originalPrice": "$40",
+		"discountedPrice": "$20"
+	},
+	{
+		"type": "Meet and Greet Parking",
+		"totalTime": "2-5 mins",
+		"imgType": "Human",
+		"icon": "human",
+		"interval": "",
+		"originalPrice": "$10",
+		"discountedPrice": "$5"
+	}
+]

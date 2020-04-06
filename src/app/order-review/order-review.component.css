@@ -1,0 +1,543 @@
+.main2{
+    background-color: #F2F2F2;
+    width: 100%;
+    //height: 700px;
+    margin-left: 0;
+	//display:none;
+	
+}
+.title0{
+	margin-left: 14%;
+    margin-top: 2.5%;
+   // position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0e2b58;
+}
+.title1{
+	margin-left: 14%;
+    margin-top: 5%;
+    //position: relative;
+    font-size: 28px;
+    font-weight: 400;
+    color: #112e5a;
+}
+.step1{
+	//width: 3%;
+   // height: 25px;
+   // position: relative;
+    //background: white;
+    margin-left: 71%;	
+    margin-top: 0.5%;
+    //border: 1px solid gainsboro;
+}
+.logoImgRight{
+	width: 13%;
+    height: 41px;
+	margin-left: -2%;
+	
+}
+.logoImgRight2{
+	width: 13%;
+    height: 41px;
+}
+.logoImgRight3{
+	width: 13%;
+    height: 41px;
+}
+.logoImgRight4{
+	width: 13%;
+    height: 41px;
+}
+.logoImgRight5{
+	width: 13%;
+    height: 53px;
+   // position: relative;
+    margin-top: -1.7%;
+}
+.rightTab1{
+	margin-left: 50%;
+    margin-top: 5%;
+    color: #169bd5;
+    font-size: 13px;
+}
+.title3{
+    margin-left: 11%;
+    margin-top: 3.5%;
+   // position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: #999999;
+}
+.contentMn{
+	margin-top: 15px;
+	
+}
+.title4{
+	margin-left: 68%;
+    margin-top: 0%;
+    font-size: 20px;
+    color: rgba(165, 158, 158, 0.58);
+	
+}
+.logoImg{
+	position: relative;
+    margin-top: -9%;
+    margin-left: -3%;
+}
+.cParking{
+	/*width: 23%;*/
+    height: 200px;
+    background: #4AC4C4;
+    margin-left: 11.5%;
+    //margin-top: 6.5%;
+    border-radius: 5px;
+    position: relative;
+}
+.divContentParking{
+}
+.buttonP1{
+	margin-left: 20%;
+    margin-top: 0;
+   // position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.carParking1{
+    margin-left: 18%;
+    margin-top: 5%;
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+}
+.parkingBusiness1{
+    height: 37px;
+   // position: relative;
+    width: 40%;
+    background-color: #7dbc3f;
+    margin-left: 0%;
+    margin-top: 10%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.ter3Title{
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 4%;
+    color: white;
+    font-weight: bold;
+}
+.entryTitle{
+    margin-left: 5%;
+    margin-top: 10%;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+}
+
+.exitTitle{
+    margin-left: 5%;
+    margin-top: 20%;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+}
+.dateTime{
+    margin-top: -7%;
+    position: absolute;
+    margin-left: 4%;
+    font-size: 12px;
+    color: #2633f5;
+}
+.pButton1 {
+    width: 10%;
+    height: 36px;
+    background: #09f;
+    margin-left: 3%;
+    margin-top: 3%;
+    float: left;
+}
+.pButtonlong {
+    width: 10%;
+    height: 36px;
+   position: absolute;
+    background: #09f;
+    margin-left: 0%;
+    margin-top: 17%;
+}
+.buttonPlong{
+	margin-left: 20%;
+    margin-top: 0;
+   // position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.productChange{
+    margin-top: 49.5%;
+    margin-left: -37%;
+    font-size: 12px;
+    color: #2633f5;
+    position: absolute;
+    z-index: 2;
+}
+.parkingBusinesslong{
+	height: 37px;
+  //  position: relative;
+    width: 60%;
+    background: #00ccff;
+    margin-left: 13%;
+    margin-top: 17%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+}
+.manchesterButtonlong{
+//	position: relative;
+    margin-left: 8%;
+    margin-top: 4.2%;
+    color: white;
+    font-weight: bold;
+}
+.longStay{
+	width: 24.5%;
+    height: 200px;
+    background: #4AC4C4;
+    margin-left: 35.5%;
+    margin-top: -14.5%;
+    border-radius: 5px;
+    position: relative;
+}
+.priceIn{
+	width: 17%;
+    height: 200px;
+    background:  #4AC4C4;
+    margin-left: 61%;
+    margin-top: -18%;
+    border-radius: 5px;
+    position: relative;
+}
+.removeItm{
+	width: 10%;
+    height: 200px;
+    background:  #4AC4C4;
+    margin-left: 79%;
+    margin-top: -15%;
+    border-radius: 5px;
+    position: relative;
+}
+.deleteImg{
+	position: relative;
+    width: 35%;
+    margin-left: 32%;
+    margin-top: 47%;
+}
+.stairsImg{
+	position: relative;
+    width: 40%;
+    margin-left: 27%;
+    margin-top: 47%;
+}
+.remaveTitle1{
+	margin-left: 8%;
+   // position: relative;
+    margin-top: 111%;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+}
+.bussinessparking{
+	width: 48.5%;
+    height: 200px;
+    background:  #6699FF;
+    margin-left: 11.5%;
+	margin-top: -1px;
+    border-radius: 5px;
+    position: relative;
+}
+.content{
+	width: 53%;
+  //  position: relative;
+    max-width: 55%;
+    margin-top: 10%;
+    margin-left: 7%;
+    color: white;
+	font-size: 14px;
+}
+.parkingBusiness{
+	height: 37px;
+  //  position: relative;
+    width: 40%;
+    background: #f90;
+    margin-left: 8%;
+    margin-top: 1%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.manchesterButton{
+	position: relative;
+    margin-left: 8%;
+    margin-top: 3%;
+    color: white;
+    font-weight: bold;
+}
+.pButton{
+	width: 5%;
+    height: 36px;
+  //  position: relative;
+    background: #09f;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+.buttonP{
+    margin-left: 20%;
+    margin-top: 0;
+   // position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.parkingTerminal{
+	height: 37px;
+   // position: relative;
+    width: 30%;
+    background: #66f;
+    margin-left: 70%;
+    margin-top: 1%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.Terminal2and3{
+//	position: relative;
+    margin-left: 8%;
+    margin-top: 3%;
+    color: white;
+    font-weight: bold;
+}
+.upgradeDiv{
+	width: 30.5%;
+    height: 35px;
+    background: #3366FF;
+    margin-left: 11.5%;
+    margin-top: 0%;  
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.upgrade{
+	position: relative;
+    margin-left: 8%;
+    margin-top: 2%;
+    color: white;
+    font-weight: bold;
+	}
+.upgradeTitle1 {
+    margin-left: 28%;
+  position: relative;
+    margin-top: 111%;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+}
+.priceIn2{
+	width: 17%;
+    height: 200px;
+    background: #6699FF;
+    margin-left: 61%;
+    margin-top: -25%;
+    border-radius: 5px;
+    position: relative;
+}
+.removeItm2{
+	width: 10%;
+    height: 200px;
+    background: #6699FF;
+    margin-left: 79%;
+    margin-top: -15%;
+    border-radius: 5px;
+    position: relative;
+}
+.removeBtn{
+	width: 7%;
+    height: 35px;
+    background: #73C167;
+    margin-left: 80.5%;
+    margin-top: 1%;  
+   position: relative;  
+}
+.upgradeBtn{
+	width: 7%;
+    height: 35px;
+    background: #73C167;
+    margin-left: 80.5%;
+    margin-top: 1%;
+  position: relative;
+}
+.dollarprice{
+    margin-top: 137px;
+    margin-bottom: 73px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.pricedollar{
+	position: relative;
+    margin-left: 55%;
+    margin-top: 19%;
+    font-size: 30px;
+    color: white;
+}
+.dollarprice1{
+	margin-top: 137px;
+    margin-bottom: 73px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.priceInVal{
+	margin-left: 69%;
+  position: relative;
+    margin-top: 74%;
+    color: white;
+    font-size: 19px;
+}
+.totalTlt{
+	margin-left: 27%;
+    margin-top: 75%;
+  position: relative;
+    color: white;
+    font-size: 15px;
+}
+.totalTlt1{
+  position: relative;
+    margin-left: 27%;
+    margin-top: 76%;
+    color: white;
+}
+.priceVal{
+	margin-left: 69%;
+  position: relative;
+    margin-top: 74%;
+    color: white;
+    font-size: 19px;
+}
+.step11{
+	position: relative;
+    margin-left: 65%;
+    margin-top: 1.2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}
+.value1{
+	position: relative;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-weight: bold;
+}
+.value12{
+	position: relative;
+    margin-top: 3%;
+    margin-left: 4%;
+    font-weight: bold;
+}
+.value13{
+	position: relative;
+    margin-top: 3%;
+    margin-left: 4%;
+    font-weight: bold;
+}
+.value14{
+	position: relative;
+    margin-top: 3%;
+    margin-left: 4%;
+    font-weight: bold;
+}
+.value15{
+	position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    font-weight: bold;
+    z-index: 1;
+}
+.editImg{
+    position: relative;
+    width: 11.5%;
+    margin-left: 107%;
+    margin-top: 28%;
+    cursor: pointer;
+}
+.editImgChange{
+    position: relative;
+    width: 7.5%;
+    margin-left: 87%;
+    margin-top: 47%;
+    cursor: pointer;
+}
+#date{
+	margin-left: 17%;
+    margin-top: 24%;
+    z-index: 2;
+  position: relative;
+}
+.logoImgRight24{
+	width: 4%;
+    height: 41px;
+    margin-left: 74%;
+    margin-top: 1.5%;
+  position: relative;
+	display:none;
+}
+.popUp{
+	height: 190px;
+  position: relative;
+    width: 24%;
+    background-color: cornflowerblue;
+    margin-left: 37%;
+    margin-top: 27%;
+    border-radius: 5px;
+    z-index: 1;
+}
+.shop_yes{
+    margin-left: 21%;
+    margin-top: 40%;
+}
+.shop_no{
+	margin-left: 25%;
+    margin-top: 40%
+}
+.checkoutAlert{
+	position: relative;
+    margin-left: 11%;
+    margin-top: 16%;
+    font-weight: bold;
+    color: white;
+}
+.checkoutPop{
+	height: 150px;
+    position: relative;
+    width: 24%;
+    background-color: cornflowerblue;
+    margin-left: 37%;
+    margin-top: 27%;
+    border-radius: 5px;
+    z-index: 1;
+}
+.checkoutSuccessfull{
+    margin-left: 27%;
+  position: relative;
+    margin-top: 14%;
+    color: white;
+    font-weight: bold;
+}
+.check_ok{
+    margin-top: 26%;
+  position: relative;
+    margin-left: 42%;
+}

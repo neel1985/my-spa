@@ -1,0 +1,14 @@
+.navbar {
+    border-radius: 0px !important;
+	    margin-bottom: 0% !important;
+}
+a{
+	padding: 0% !important;
+}
+li{
+	padding-left: 0.8em;
+padding-right:0.8em
+}
+li:not(:first-of-type) {
+border-left: 1px solid #337ab7;
+} 

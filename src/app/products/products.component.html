@@ -1,0 +1,59 @@
+<!-- <p>
+  products works!
+</p> -->
+
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="card-deck col-sm-3" *ngFor='let product of iproducts'>
+		  <div class="card">
+			<h4 class="card-title">{{product.type}}</h4>
+			<img class="card-img-top" src="..." alt="Card image cap">
+			<div class="card-block">
+			  <h3 class="card-text">{{product.price}}</h3>
+			  <p class="card-text">{{product.id}}</p>
+			  <button type="button" class="btn btn-primary">Book Now</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div> -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3" *ngFor='let product of iproducts'>
+			<div class="fillContent">
+			<br>
+				<div class="row">
+					<div class="col-sm-2">
+						<p class="Text1">P</p>
+					</div>
+					<div class="col-sm-8">
+						<p class="Long">{{product.type}}</p>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="timeDesign">
+							<p class="timings">{{product.totalTime}}
+								<br>Every {{product.interval}}
+								<img class="travel" alt="{{product.imgType}}">
+							</p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-10">
+						<div class="price"><br>
+							<p id="price1">{{product.originalPrice}}</p>
+							<p id="priceText">Your price</p>
+							<p id="price2">{{product.discountedPrice}}</p>
+						</div>
+					</div>
+				</div>
+				<br>
+					<button class="btn btn-success" (click)= 'toNext(product)'>Book Now</button> <!-- ChangeBtn -->
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,78 @@
+[
+	{
+		"Airline": "AirAsia",
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "10-22-2017 20:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"icon": "airasia",
+		"ImageAline" : "airline",
+		"Status": "On Time",
+		"Gate": "19A"
+		
+	},
+	{
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "210-22-2017 0:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"Airline": "Indigo",
+		"ImageAline" : "airline",
+		"Status": "On Time",
+		"Gate": "19A",
+		"icon": "indigo"
+	},
+	{
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "10-22-2017 20:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"Airline": "Air-India",
+		"ImageAline" : "airline",
+		"Status": "On Time",
+		"Gate": "19A",
+		"icon": "airindia"
+	},
+	{
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "10-22-2017 20:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"Airline": "Lufthansa",
+		"ImageAline" : "airline",
+		"Time": "20:28",
+		"Status": "On Time",
+		"Gate": "19A",
+		"icon": "lufthansa"
+	},
+	{
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "10-22-2017 20:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"Airline": "jet airways",
+		"ImageAline" : "airline",
+		"Time": "20:28",
+		"Status": "On Time",
+		"Gate": "19A",
+		"icon": "jetairways"
+	},
+	{
+		"FlightNo": "AA-5643",
+		"EndPoint": "KOLKATA",
+		"StartPoint":"PUNE",
+		"DeptTime": "10-22-2017 20:28",
+		"ArrivalTime": "10-22-2017 22.45",
+		"Airline": "air costa",
+		"ImageAline" : "airline",
+		"Time": "20:28",
+		"Status": "On Time",
+		"Gate": "19A",
+		"icon": "air_costa"
+	}
+]
